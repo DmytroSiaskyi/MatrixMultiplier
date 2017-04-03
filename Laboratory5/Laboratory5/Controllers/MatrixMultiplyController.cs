@@ -12,9 +12,9 @@ namespace Laboratory5.Controllers
             return result;
         }
 
-        public object Post([FromBody]double[,] firstMatrix, [FromBody]double[,] secondMatrix)
+        public object Post([FromBody]MultiplicationRequest multiplicationRequest)
         {
-            var result = MatrixMultiplicationHelper.MultiplyMatrices(firstMatrix, secondMatrix);
+            var result = MatrixMultiplicationHelper.MultiplyMatrices(multiplicationRequest.FirstArray, multiplicationRequest.SecondArray);
             return result;
         }
     }

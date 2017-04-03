@@ -96,6 +96,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\MatrixMultiplicationHelper.cs" />
+    <Compile Include="Models\MultiplicationRequest.cs" />
     <Compile Include="Models\MultiplicationResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
